@@ -1,10 +1,15 @@
-import type { Metadata } from "next";
-import { Counter } from "./components/counter/Counter";
+// import Counter from "./components/Counter";
 
-export default function IndexPage() {
-  return <Counter />;
+import AgePredict from "./components/AgePredict";
+
+export default function Home() {
+  return (
+    <div>
+      <h1 className="text-center">Redux Complete Tutorials</h1>
+      <div>{/* <Counter /> */}</div>
+      <div>
+        <AgePredict />
+      </div>
+    </div>
+  );
 }
-
-export const metadata: Metadata = {
-  title: "Redux Toolkit",
-};
